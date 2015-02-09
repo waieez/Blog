@@ -2,7 +2,7 @@
 
 ##The Parameter This:
 
-'this' is one of Javascript's biggest gotcha's and it is one of the most misunderstood concepts in javascript.
+'this' is one of Javascript's biggest gotcha's and what it binds to at call-time is one of the most misunderstood concepts in Javascript.
 
 Possibly the best explaination of the parameter 'this' can be found [here](https://www.udacity.com/course/ud015), as explained by Hack Reactor's co-founder, Marcus Phillips.
 
@@ -26,7 +26,7 @@ The first parameter in bind, call, or apply is the object you wish to refer to a
 Apply and Call differ only in the arguments it takes.
 
 ```javascript
-//Apply takes an array as it's second argument.
+//Apply takes an array as its second argument.
 
 var array = [arg1, arg2, arg3...];
 fn.apply(this, array);
