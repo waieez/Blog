@@ -11,20 +11,12 @@ By the time I settled on Hack Reactor in mid-November, I had already spent a cou
 ## Friends
 
 I continued to devour online resources and completed my first [app](https://github.com/waieez/nodevshumanity) Christmas Eve. [(demo)](https://nodevshumanity.herokuapp.com)
+
 This gave me the confidence to go to an Angular and Node meetup where I met some really awesome people.
 
 In an alternate reality, I would've spent the rest of my pre-HackReactor days as an intern at Factor75.com. Instead, I'll be attending the February Remote cohort (thanks Allen and HR admissions team!).
 
-## Metamorphosis
-
-In two days, I join my fellow hackers (remotely) as we undergo the intense three month program that is Hack Reactor. I'll be spending that time locked up in my room hacking away at amazing projects I can't wait to show off in three months time.
-
-
-I don't know if caterpillars dream of becoming beautiful butterflies, but I've been dreaming this dream for a long time now.
-
-It's time to make it a reality.
-
-
+## Thanks
 
 To Jimmy Tsao, Mark Moschel, Neel Bhaat, and Joesph Jung:
 Thank you so much for the wisdom, patience, and kindness you have shown me.
@@ -32,3 +24,11 @@ You guys are fabulous.
 
 To my family:
 I'm sorry. I love you all deeply. Thank you for believing in me.
+
+## Metamorphosis
+
+In two days, I join my fellow hackers (remotely) as we undergo the intense three month program that is Hack Reactor. I'll be spending that time locked up in my room hacking away at amazing projects I can't wait to show off.
+
+I don't know if caterpillars dream of becoming beautiful butterflies, but I've been dreaming this dream for a long time now.
+
+It's time to make it a reality.
