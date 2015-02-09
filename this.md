@@ -42,7 +42,7 @@ function speak (greeting) {
   return this + ' goes ' + greeting;
 }
 
-speak.apply('dog');
+speak.apply('dog', 'woof');
 // returns 'dog goes woof'
 
 speak.call('cat','meow');
