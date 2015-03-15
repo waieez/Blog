@@ -13,9 +13,9 @@ Our first algorithm was a recursive backtracking algorithm that was relatively s
 3. Leverage the symmetry of the board to reduce the number of starting positions by half to obtain the final count. (The middle column is not doubled for odd N boards).
 
 ###Version 3
-4. Use webworkers to parallelize the executions
-We only had to make a couple insertions to our previous code so that each worker would work on a single starting position.
+4. Use webworkers to parallelize the executions.
 
+We only had to make a couple insertions to our previous code so that each worker would work on a single starting position.
 Using asynchronus map reduce, we collect the returned count from each worker.
 In order to leverage symmetry, we only needed to create N/2 workers (rounded up) and double the count returned (except for the middle column for odd N boards).
 
