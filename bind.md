@@ -2,7 +2,7 @@
 
 Understanding what happens in when we use native methods is very important as a software engineer.
 
-![Apparantly, writing fn.bind is an interview question.](http://i.imgur.com/uoocfSA.jpg)
+!['Apparantly, writing fn.bind is an interview question.'](http://i.imgur.com/uoocfSA.jpg)
 
 In this post we'll review call, and apply and use it to write our own fn.bind.
 
