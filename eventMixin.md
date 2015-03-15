@@ -11,6 +11,7 @@ Lets start by writing our own simple mixin!
 ####Challenge: Implement Event Mixin:
 1. Each event can have multiple listeners for that event.
 2. When the event is triggered, all listeners for that event are executed.
+3. Trigger passes any additinal arguments to all listeners
 
 ```javascript
 var thing = {};
