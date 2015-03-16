@@ -2,7 +2,7 @@
 
 Event systems are great for writing and describing async code. It allows us to express and communicate control flow in a way that is cleaner and much more intuitive by using words like 'event', 'emit/trigger', and 'listen'.
 
-If you've never took the time to dig around, you might think there is some complicated logic behind these systems (at least... I did). However, the concepts behind event systems are relatively simple.
+If you've never taken the time to dig around, you might think there is some complicated logic behind these systems (at least... I did). However, the concepts behind event systems are relatively simple.
 
 Understanding this will help you to event systems like those used in [node.js](https://nodejs.org/api/events.html) and frameworks like [Backbone.js](http://backbonejs.org/).
 
@@ -11,7 +11,7 @@ Lets start by writing our own simple mixin!
 ####Challenge: Implement Event Mixin:
 1. Each event can have multiple listeners for that event.
 2. When the event is triggered, all listeners for that event are executed.
-3. Trigger passes any additinal arguments to all listeners
+3. Trigger passes any additional arguments to all listeners
 
 ```javascript
 var thing = {};
@@ -25,7 +25,7 @@ thing.on('fire', function(){
 thing.on('fire', function(item){
   if (item === 'fire extinguisher') {
     thing.onFire = false; 
-    console.log('thanks dude!');
+    console.log('Thanks dude!');
   } else {
     console.log("I need something to put out the fire!!");
   }
