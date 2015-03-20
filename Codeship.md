@@ -94,8 +94,7 @@ Here I've selected Heroku Deployment.
 Just follow their instructions.
 
 #### Push
-If you've done everything right.
-Throw this in your README.md for a shiny new badge.
+If you've done everything right, throw this in your README.md for a shiny new badge.
 ```
 ![Codeshipped](https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=master)
 ```
