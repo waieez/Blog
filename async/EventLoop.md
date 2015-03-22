@@ -33,7 +33,7 @@ So, to briefly summarize:
 
     1. It does some internal maintenance.
     2. It checks to see if the stack is clear.
-    3. If clear, it pulls a task out of the queue and runs it.**
+    3. If clear, it pulls a task out of the queue and runs it until the stack clears**
     5. It repeats the cycle until it exhausts all tasks in the stack and queue.
 
   **If the task needs to be run at a future point in time, Javascript makes an api call to the engine that describe what and when things should be executed. How this is implemented depends on the engine.
@@ -67,9 +67,9 @@ What happens is:
 5. doAsync logs 'Not Ready Yet'
 6. the stack clears and the event loop does some maintenance
 7. checks to see that the stack is clear
-8. since the stack is clear, add task from event queue to stack and run it.
+8. since the stack is clear, add task from queue to stack and run it.
 9. assign 'Finished' to result
-10. clear the stack and repeat the event queue (which will terminate without any more tasks).
+10. clear the stack and repeat the event loop (which will terminate without any more tasks).
 
 
 How about this?
@@ -102,7 +102,7 @@ What happens (at a higher level this time):
 
 ###Callback Hell
 
-Now that we understand the basics of how Javascript works, we can see why this callback pattern is so common when writing in Javascript.
+Now that we understand the basics of how Javascript works, we can see why this callback pattern is so common when dealing with async Javascript.
 
 ```javascript
 asyncOne(input, function (err, resultA) {
