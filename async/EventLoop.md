@@ -1,8 +1,9 @@
-#Mastering Async Javascript
+#Javascript's Event Loop
+###Mastering Async Javascript - p.1
 
-When I first started to use node, my knowledge of Javascript was very basic and so I had a lot of trouble understanding callbacks and the event loop and especially, Async.
+My first exposure to node/async was actually through Mixu's Node Book. At the time, I was still very new to the language and I had no idea how Javascript's Event Loop worked.
 
-Now that I believe I have a firmer grasp of the two concepts, I want to revist some of the sticky parts of handling async code and maybe help out those who are just starting out.
+Now that I believe I have a firmer grasp Javascript and Node, I want to revist some of the sticky parts of handling async code and maybe help out those who are just starting out.
 
 I'm still learning a lot and so this is still very much a work in progress. If you feel I've misrepresented something feel free to let me know.
 
@@ -114,7 +115,7 @@ asyncOne(input, function (err, resultA) {
     asyncHell(resultB, function (err, yet) {
       if (err) console.error("All Hope Abandon Ye Who Enter");
 
-      areWeDone(yet);
+      areWeDone(null, yet);
     });
   });
 });
