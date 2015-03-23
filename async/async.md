@@ -1,10 +1,14 @@
 #Write a miniAsync Library
 ###Mastering Async Javascript - p.2
 
-Part 1 describes at a higher level how the Javascript Event Loop works.
+[Part 1](https://github.com/waieez/Blog/blob/master/async/EventLoop.md) describes at a higher level how the Javascript Event Loop works.
 Here, we'll see how async libraries help us to write code that looks synchronous by writing one ourselves!
 
-Recall this beast from Part1
+>Until I install syntax highlighting, please check out the post on [github](https://github.com/waieez/Blog/blob/master/async/async.md).
+
+>Also, the all code used in this post can be found [here](https://github.com/waieez/Blog/blob/master/async/async.js).
+
+Recall this beast from [Part1](https://github.com/waieez/Blog/blob/master/async/EventLoop.md).
 
 ```Javascript
 asyncOne(input, function (err, resultA) {
@@ -123,6 +127,8 @@ async.map = function (array, callback, done) {
 
 If you need a way to create async code to test your library, use this:
 
+If this pattern is a little confusing, please refer to my post on [bind](https://github.com/waieez/Blog/blob/master/bind.md).
+
 ```javascript
 // Note: Don't worry too much about how this function works.
 // It's simply to model the common interface for interacting with asynchronous code
@@ -151,7 +157,6 @@ function doAsync(func, context) {
   }
 }
 
-// If this pattern is a little confusing, please refer to my post on bind.
 
 // Example Usage:
 function plusTwo (val) {

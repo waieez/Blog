@@ -8,8 +8,8 @@ Now that I believe I have a firmer grasp Javascript and Node, I want to revist s
 I'm still learning a lot and so this is still very much a work in progress. If you feel I've misrepresented something feel free to let me know.
 
 [Javascript's Event Loop](#javascripts-event-loop)
+[Async Libraries](https://github.com/waieez/Blog/blob/master/async/async.md)
 ```javascript
-//todoASYNC: Write post on Async Library
 //todoASYNC: Write post on Promises
 ```
 
