@@ -1,43 +1,45 @@
 #Javascript's Event Loop
+> This post is a part of a series
+
+>1. [Javascript's Event Loop](https://github.com/waieez/Blog/blob/master/async/EventLoop.md)
+>2. [Write a miniAsync Library](https://github.com/waieez/Blog/blob/master/async/async.md)
+```javascript
+//todoASYNC: Write post on Promises
+```
+
 ###Mastering Async Javascript - p.1
 
-My first exposure to node/async was actually through Mixu's Node Book. At the time, I was still very new to the language and I had no idea how Javascript's Event Loop worked.
+My first exposure to node/async was actually through Mixu's Node Book. At the time, I was still very new to the language and I had no idea how Javascript's Event Loop worked. I struggled with the examples he used and tried to code my own solution in order to better understand Async.
 
 Now that I believe I have a firmer grasp Javascript and Node, I want to revist some of the sticky parts of handling async code and maybe help out those who are just starting out.
 
 I'm still learning a lot and so this is still very much a work in progress. If you feel I've misrepresented something feel free to let me know.
-
-[Javascript's Event Loop](#javascripts-event-loop)
-[Async Libraries](https://github.com/waieez/Blog/blob/master/async/async.md)
-```javascript
-//todoASYNC: Write post on Promises
-```
 
 ###Javascript's Event Loop
 To begin, I highly recommend this JSConfEU talk given by Phillip Roberts on the topic. [Loupe](http://latentflip.com/loupe)
 
 So, to briefly summarize:
 
-1. Javascript (the runtime) is single threaded.
+#####Javascript (the runtime) is single threaded.
 
   This means that only a has single call stack and therefore can only execute a single block of code at a time. Until that block of code finishes, Javascript cannot do anything.
 
 
-2. Node (also, the browser) is multi-threaded
+#####Node (also, the browser) is multi-threaded
 
   Node is a wrapper around V8, Google's Javascript Engine. It and other Javascript Engines are written in multi-threaded languages like C++.
 
 
-2. The Event Loop
+#####The Event Loop
 
   Javascript's Event Loop works something like this:
 
-    1. It does some internal maintenance.
-    2. It checks to see if the stack is clear.
-    3. If clear, it pulls a task out of the queue and runs it until the stack clears**
-    5. It repeats the cycle until it exhausts all tasks in the stack and queue.
+1. It does some internal maintenance.
+2. It checks to see if the stack is clear.
+3. If clear, it pulls a task out of the queue and runs it until the stack clears**
+5. It repeats the cycle until it exhausts all tasks in the stack and queue.
 
-  **If the task needs to be run at a future point in time, Javascript makes an api call to the engine that describe what and when things should be executed. How this is implemented depends on the engine.
+**If the task needs to be run at a future point in time, Javascript makes an api call to the engine that describe what and when things should be executed. How this is implemented depends on the engine.
 
   The engine then queues tasks and continues with the next step of the event loop.
 
@@ -127,6 +129,4 @@ If the above code is hard to read fear not! Async Libraries and Promises to the 
 (WIP) In later posts, we'll get a feeling for how they work by writing our own mini-async-libraries.
 
 Thanks for reading!
-```javascript
-next();
-```
+####[next()](https://github.com/waieez/Blog/blob/master/async/async.md)

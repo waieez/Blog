@@ -1,4 +1,13 @@
 #Write a miniAsync Library
+
+> This post is a part of a series
+
+1. [Javascript's Event Loop](https://github.com/waieez/Blog/blob/master/async/EventLoop.md)
+2. [Write a miniAsync Library](https://github.com/waieez/Blog/blob/master/async/async.md)
+```javascript
+//todoASYNC: Write post on Promises
+```
+
 ###Mastering Async Javascript - p.2
 
 [Part 1](https://github.com/waieez/Blog/blob/master/async/EventLoop.md) describes at a higher level how the Javascript Event Loop works.
@@ -86,11 +95,9 @@ function doAsync (input, callback) {
 
 ###Challenge: Implement async.sequential
 
-This function should be able to take an input, a list of functions, and a final callback (done).
-
-It should execute the list of functions in order and pass the result of one to the next.
-
-It should call done when everything has completed or a step returns an error.
+1. This function should be able to take an input, a list of functions, and a final callback (done).
+2. It should execute the list of functions in order and pass the result of one to the next.
+3. It should call done when everything has completed or a step returns an error.
 
 
 ```javascript
@@ -106,13 +113,11 @@ async.sequential = function(input, callbacks, done) {
 
 ###Next: Implement async.map
 
-This function should be able to take an array, a task, and a final callback (done).
+1. This function should be able to take an array, a task**, and a final callback (done).
+2. It should execute the task** on every item in the array.
+3. It should return an array with the result of each task mapped to the proper index.
 
-task takes two parameters (input, callback)
-
-It should execute the task on every item in the array.
-
-It should return an array with the result of each task mapped to the proper index.
+**task takes two parameters (input, callback)
 
 ```javascript
 var async = {}
