@@ -1,4 +1,6 @@
-#My JS is Getting Rusty
+#Rust OOP? A Rusty QueueStack
+
+My JS is getting Rusty!
 
 Our expedition into the heart of Rust has just begun.
 
@@ -7,7 +9,6 @@ Below is a simple implementation of a Queue using two Stacks.
 For JS natives trying to pick up the language, I hope this could be a useful reference.
 
 Rust 1.0
-
 
 Stack
 
